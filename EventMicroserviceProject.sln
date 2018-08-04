@@ -3,9 +3,35 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{562ED207-1EBF-41CD-A331-8792BBE79996}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{79FC089A-6B17-47A7-A270-7DAE9C5F6E2E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventsAPI", "EventsAPI\EventsAPI.csproj", "{147E881D-1BB6-4274-8F69-F152ABED90A0}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{3892EB3E-DF3D-4357-909E-367391A901D9}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{147E881D-1BB6-4274-8F69-F152ABED90A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{147E881D-1BB6-4274-8F69-F152ABED90A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{147E881D-1BB6-4274-8F69-F152ABED90A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{147E881D-1BB6-4274-8F69-F152ABED90A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3892EB3E-DF3D-4357-909E-367391A901D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3892EB3E-DF3D-4357-909E-367391A901D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3892EB3E-DF3D-4357-909E-367391A901D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3892EB3E-DF3D-4357-909E-367391A901D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{79FC089A-6B17-47A7-A270-7DAE9C5F6E2E} = {562ED207-1EBF-41CD-A331-8792BBE79996}
+		{147E881D-1BB6-4274-8F69-F152ABED90A0} = {79FC089A-6B17-47A7-A270-7DAE9C5F6E2E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C129654D-B95E-4454-81E6-7220B3A77B1F}
