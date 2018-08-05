@@ -41,10 +41,10 @@ namespace EventsAPI.Data
         {
             return new List<Event>()
             {
-                new Event() { EventVenueId = 1, EventName = "Creole Food Festival", EventShortDescription = "A French Affair", EventLongDescription = "Come Enjoy Creole Cuisine", EventTime = "0900"},
-                new Event() { EventVenueId = 2, EventName = "Joanne World Tour", EventShortDescription = "Lady Gaga in Concert", EventLongDescription = "Lady Gaga World Tour 2018", EventTime = "2300"},
-                new Event() { EventVenueId = 3, EventName = "Mauritian Culture Festival", EventShortDescription = "Mauritian Nights", EventLongDescription = "Enjoy Summer in Paradise", EventTime = "1800"},
-                new Event() { EventVenueId = 4, EventName = "Amazon Family Day", EventShortDescription = "Bringing Everyone Joy", EventLongDescription = "Whole Family Enjoys Together", EventTime = "1100"}
+                new Event() { EventVenueId = 1, EventName = "Creole Food Festival", EventShortDescription = "A French Affair", EventLongDescription = "Come Enjoy Creole Cuisine", EventTime = new DateTime (2018, 8, 19, 8, 30, 00), EventPictureUrl = "http://externaleventbaseurltobereplaced/api/Image/Event/1"},
+                new Event() { EventVenueId = 2, EventName = "Joanne World Tour", EventShortDescription = "Lady Gaga in Concert", EventLongDescription = "Lady Gaga World Tour 2018", EventTime = new DateTime (2018, 8, 25, 22, 30, 00), EventPictureUrl = "http://externaleventbaseurltobereplaced/api/Image/Event/2"},
+                new Event() { EventVenueId = 3, EventName = "Mauritian Culture Festival", EventShortDescription = "Mauritian Nights", EventLongDescription = "Enjoy Summer in Paradise", EventTime = new DateTime(2018, 8, 21, 22, 30, 00), EventPictureUrl = "http://externaleventbaseurltobereplaced/api/Image/Event/3"},
+                new Event() { EventVenueId = 4, EventName = "Amazon Family Day", EventShortDescription = "Bringing Everyone Joy", EventLongDescription = "Whole Family Enjoys Together", EventTime = new DateTime(2018, 9, 10, 20, 30, 00), EventPictureUrl = "http://externaleventbaseurltobereplaced/api/Image/Event/4"}
             };
         }
     }

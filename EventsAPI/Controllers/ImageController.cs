@@ -25,8 +25,32 @@ namespace EventsAPI.Controllers
         {
             var webRoot = _env.WebRootPath;
             var path = Path.Combine(webRoot + "/Images/Venues/", "venue" + id + ".png");
-            var buffer = System.IO.File.ReadAllBytes(path);
-            return File(buffer, "image/png");
+
+            return GetFile(path);
         }
+
+        [HttpGet]
+        [Route("Event/{id}")]
+
+        public IActionResult GetEventImage(int id)
+        {
+            var webRoot = _env.WebRootPath;
+            var path = Path.Combine(webRoot + "/Images/Events/", "event" + id + ".png");
+            return GetFile(path);
+        }
+
+        private IActionResult GetFile(string path)
+        {
+            try
+            {
+                var buffer = System.IO.File.ReadAllBytes(path);
+                return File(buffer, "image/png");
+            }
+            catch (Exception)
+            {
+                return NotFound();
+            }
+        }
+
     }
 }

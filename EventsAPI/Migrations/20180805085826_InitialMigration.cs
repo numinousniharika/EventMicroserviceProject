@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace EventsAPI.Migrations
 {
@@ -34,7 +35,7 @@ namespace EventsAPI.Migrations
                     EventName = table.Column<string>(maxLength: 100, nullable: false),
                     EventShortDescription = table.Column<string>(nullable: true),
                     EventLongDescription = table.Column<string>(nullable: true),
-                    EventTime = table.Column<string>(nullable: false),
+                    EventTime = table.Column<DateTime>(nullable: false),
                     EventPictureUrl = table.Column<string>(nullable: true),
                     EventVenueId = table.Column<int>(nullable: false)
                 },

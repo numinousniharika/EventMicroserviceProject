@@ -15,11 +15,10 @@ namespace EventsAPI.Domain
 
         public string EventLongDescription { get; set; }
 
-        public string EventTime { get; set; }
+        public DateTime EventTime { get; set; }
 
         public string EventPictureUrl { get; set; }
 
-        // missing
         public int EventVenueId { get; set; }
 
         public virtual EventVenue EventVenue { get; set; }
